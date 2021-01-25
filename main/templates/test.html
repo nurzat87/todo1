@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -41,7 +42,7 @@
                     <p>{{ todo.created_at }}</p>
                     <div class="action_buttons">
                         <img src="{% static './icons/unmarked.png' %}" />
-                        <img src="{% static './icons/delete.png' %}" />
+                        <a href="{% url 'delete-todo' todo.id %} "><img src="{% static './icons/delete.png' %}" /></a>
                     </div> 
                 </div>
             </div>
